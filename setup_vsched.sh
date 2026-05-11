@@ -28,7 +28,7 @@ sudo echo -20 | sudo tee /sys/fs/cgroup/hi_prgroup/cpu.weight.nice
 
 (cd ./vsched_kernel/custom_modules/ && sudo make)
 
-sudo insmod ./vsched_kernel/custom_modules/preempt_proc.ko
+sudo insmod ./vsched_kernel/custom_modules/vsched_module.ko
 
 (cd ./vsched_kernel/tools/lib/bpf && sudo make)
 
